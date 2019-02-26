@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    /* height: 100vh; */
+    background-color: #000;
+    background-image: url("nightSky.jpg");
+    background-size: 100% 100%;
+    animation: nightStar 5s linear forwards;
+    overflow: hidden;
+}
+div.nightSky {
+    /* background-color: #000; */
+    
+}
+@keyframes nightStar {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+section.presentation {
+
+}
+
+/* ///////////////////////////////////////////////// */
+h1 {
+    position: relative;
+    padding: 1em;
+    /* letter-spacing: .3em; */
+    font-size: 3em;
+    color: #0e1450;
+    text-shadow: 1px 1px 5px #818181, -1px -1px 5px #818181, -1px 1px 5px #818181, 1px -1px 5px #818181;
+    z-index: 1;
+    animation: animation-title 5s ease-out forwards;
+}
+@keyframes animation-title {
+    0% {
+        left: 2000px;
+        letter-spacing: 50px;
+    }
+    50% {
+        left: 0;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        letter-spacing: 15px;
+        animation-timing-function: ease-out;
+    }
+}
+/* ////////////////////////////////////////////////////// */
+
+.earth-moon-container {
+    /* padding-top: 50%; */
+    /* opacity: 0.5; */
+    display: flex;
+    justify-content: center;
+    /* animation: ds; */
+    animation:presentation-fade-in 10s ease-in forwards, animation-earth 20s linear forwards infinite;
+}
+@keyframes presentation-fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.earth-moon-container img.earth {
+    display: inline-block;
+    margin: 0 auto;
+    width: 300px;
+    animation: animation-earth 20s linear forwards infinite;
+}
+.earth-moon-container img.moon {
+    width: 150px;
+    animation: animation-moon 10s linear forwards infinite;
+}
+
+
+.posAbs {
+    position: absolute;
+}
+
+
+
+@keyframes animation-earth {
+   0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+@keyframes animation-moon {
+   0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+   100% {
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+   }
+}
+
+
+
+nav {
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #e4cc44;
+}

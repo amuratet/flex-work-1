@@ -41,6 +41,7 @@ h2 {
     color: #fff;
 }
 
+
 /* HEADER */
 /* ================================================= */
 
@@ -98,9 +99,9 @@ h1 {
     padding: 50px;
     display: flex;
     justify-content: center;
-    /* animation: ds; */
     animation:presentation-fade-in 10s ease-in forwards, animation-earth 20s linear forwards infinite;
 }
+
 @keyframes presentation-fade-in {
     0% {
         opacity: 0;
@@ -152,8 +153,6 @@ h1 {
       transform: rotate(360deg);
    }
 }
-
-
 
 /* ////////// Séparer présentation et menu en sticky \\\\\\\\\\\\ */
 
@@ -235,7 +234,6 @@ nav label {
         display: block;
         border: 1px solid #333;
         margin: 0 0 2px 0;
-        /* margin-bottom: 1px; */
     }
     #toggle:checked + .menu {
         display: block;
@@ -320,7 +318,6 @@ html {
 
 /* ////////////////// texte photo \\\\\\\\\\\\\\\\\ */
 
-
 .photo-gallery .outrange-text {
     transition: 1s;
     position: absolute;
@@ -369,7 +366,6 @@ footer .contact {
 
 footer input, textarea {
     width: 20em;
-    /* text-align: center; */
     padding: .5em;
     margin-bottom: .4em;
     border: none;
@@ -415,41 +411,25 @@ footer .contact {
     display: flex;
     justify-content: space-between;
     width: 60%;
-    /* margin: 0 2em 0 2em; */
-    /* margin-bottom: 2em; */
 }
 
 
 footer .logos {
-    /* position: relative; */
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-end;
-    /* color: white; */
-    /* fill: white; */
 }
 
 footer .logos img {
     transition: 1s;
     width: 2em;
-    /* padding-right: 2em; */
 }
 footer .logos i {
     padding-left: 2em;
 }
 
-@keyframes docker_left_decay {
-    0% {
-        left: 0;
-    }
-    100% {
-        left: -2em;
-    }
-}
-
 footer .logos i:hover img {
-    /* left: -1em; */
     transition: .5s;
     width: 5em;
     color: #aaa;
@@ -474,40 +454,20 @@ footer .adress img {
 }
 
 
-
-
-
 /* /////// MEDIA QUERYS \\\\\\\ */
 /* ///////////////////////////////// */
 
 @media screen and (max-width: 1200px) {
-    h1 {
-        /* font-size: 1.5em; */
-    }
+
     .photo-gallery {
-        /* max-width: 800px; */
         width: 800px;
     }
-    .photo-gallery img {
-        /* display: block; */
-        /* width: 400px; */
-        /* height: 200px; */
-    }
-    .photo-gallery .centered-text {
-        /* width: 200px; */
-        /* height: 200px; */
-        /* border: 2px solid tomato; */
-    }
-    div.anim-text img.width-3 {
-        /* width: 800px; */
-    }
-    
+
     .drone-suite {
         flex-direction: row;
     }
     .drone-suite :nth-child(1)>img {
         width: 400px;
-        /* height: 400px; */
     }
     .drone-suite :nth-child(2) img {
         width: 200px;
@@ -518,10 +478,7 @@ footer .adress img {
         width: 100%;
     }
     .photo-gallery img.width-2, .photo-gallery img.width-3 {
-        /* display: block; */
         width: 100%;
-        /* max-width: 100%; */
-        /* min-width: 800px; */
     }
     h1 {
         font-size: 1.5em;

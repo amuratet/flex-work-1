@@ -436,7 +436,7 @@ footer .logos img {
     /* padding-right: 2em; */
 }
 footer .logos i {
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 @keyframes docker_left_decay {

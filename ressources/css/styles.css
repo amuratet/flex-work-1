@@ -19,10 +19,11 @@
  src: url("../fonts/great-vibes/GreatVibes-Regular.otf");
 }
 
-html, body,h1, h2, h3, div, img, header, nav, section, label, input, textarea, button {
+html, body,h1, h2, h3, div, img, header, nav, section, label, input, textarea, button, table, tr, td, th {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-rendering: optimizeSpeed;
 }
 
 /* GLOBAL */
@@ -44,6 +45,42 @@ h2 {
 
 /* HEADER */
 /* ================================================= */
+
+
+/* //////////////////// credits \\\\\\\\\\\\\\\\\\\\ */
+
+@keyframes display_credits {
+    0% {
+        top: 100vh;
+    }
+    10% {
+        top: 100vh;
+    }
+    100% {
+        top: -100vh;
+    }
+}
+table {
+    font: bold 1.5em/1.5em ubuntu, serif;
+    width: 50%;
+    position: absolute;
+    margin: 0 auto;
+    top: 100vh;
+    animation: display_credits 20s linear forwards;
+    color: white;
+    margin-left: 25%;
+}
+table th {
+    padding-bottom: 2em;
+}
+table td {
+    vertical-align: top;
+    width: 10em;
+    padding: .5em;
+}
+table .right  {
+    text-align: right;
+}
 
 header {
     position: relative;

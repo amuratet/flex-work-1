@@ -22,7 +22,6 @@
 html, body,h1, h2, h3, div, img, header, nav, section, label, input, textarea, button {
     margin: 0;
     padding: 0;
-    /* box-sizing: content-box; */
     box-sizing: border-box;
 }
 
@@ -37,13 +36,9 @@ h2 {
     font-family: montserrat, serif;
     font-size: 2em;
     letter-spacing: .05em;
-    /* display: inline-block; */
-    /* margin: 0 auto; */
     text-align: center;
-    /* text-indent: 3em; */
     padding: 1em;
     color: #fff;
-    /* background-color: #fff; */
 }
 
 /* HEADER */
@@ -72,13 +67,11 @@ header {
 
 h1 {
     display: inline-block;
-    /* border: 1px solid #fff; */
     border-radius: .5em;
     background-color: rgba(80, 80, 80, 0.6);
     margin: 1em;
     position: relative;
     padding: .5em;
-    /* letter-spacing: .3em; */
     font-size: 2em;
     font-family: open-sans, serif;
     color: #ffffff;
@@ -102,8 +95,6 @@ h1 {
 }
 
 .earth-moon-container {
-    /* padding-top: 50%; */
-    /* opacity: 0.5; */
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -162,25 +153,6 @@ h1 {
    }
 }
 
-/* .rotating_planets {
-} */
-
-/* .rotating_earth {
-    height: 100vh;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.rotating_earth img {
-    width: 500px;
-    margin: 0 auto;
-} */
-
-
-
 
 
 /* ////////// Séparer présentation et menu en sticky \\\\\\\\\\\\ */
@@ -190,8 +162,6 @@ h1 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    /* align-content: space-between; */
-    /* align-items: flex-end; */
 }
 
 
@@ -206,45 +176,29 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 4em;
-    /* position: relative; */
-    /* bottom: 0; */
-    /* height: 100px; */
-    /* padding: 1em; */
     background: linear-gradient(to top right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
-    /* border-bottom: 1px solid #fff   ; */
 }
 
 .menu-title {
     font: bold 2em/3em greatVibes, ubuntu, serif;
-    /* border: 1px solid #eaeaeb; */
     text-align: right;
     height: 70px;
     line-height: 70px;
-    /* letter-spacing: .05em; */
     color: #fff;
     text-shadow: 1px 1px 5px #000, -1px -1px 5px #000, 1px -1px 5px #000, -1px 1px 5px #000;
     margin-left: 2em;
 }
 .menu {
     margin: 0 30px 0 0;
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    /* align-items: center; */
 }
 
-.menu-links {
-    /* display: flex; */
-    /* justify-content: space-around; */
-}
 .menu-links a {
-    /* clear: right; */
     color: gray;
     transition: 1s;
     display: inline-block;
     min-width: 7em;
     text-align: center;
     padding: .7em;
-    /* border: 1px solid #747474; */
     border-radius: .5em;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 1em .5em;
@@ -258,7 +212,6 @@ nav {
 nav label {
     margin: 0 40px 0 0;
     font-size: 4em;
-    /* width: 4em; */
     line-height: 70px;
     display: none;
     float: right;
@@ -267,7 +220,6 @@ nav label {
 }
 #toggle {
     display: none;
-    /* color: white; */
 }
 @media only screen and (max-width: 1024px) {
     nav label {
@@ -277,8 +229,6 @@ nav label {
     .menu {
         text-align: center;
         width: 100%;
-        /* flex-flow: column; */
-        /* justify-content: flex-start; */
         display: none;
     }
     .menu a {
@@ -314,21 +264,19 @@ html {
 }
 
 .photo-gallery {
-    /* border: 5px solid slateblue; */
     max-width: 1200px;
-    margin: 2em auto;
+    margin: 0 auto;
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
     background: url("../images/what-the-hex-dark.png") top left repeat rgb(180, 166, 101);
-    box-shadow: 0 0 15px #fff;
+    box-shadow: 0 0 15px #000;
 }
 
 .photo-gallery .column {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-    /* overflow: hidden; */
 }
 
 .photo-gallery .row {
@@ -355,9 +303,6 @@ html {
 .photo-gallery img {
     transition: all 2s;
     display: block;
-    /* border: 1px solid white; */
-    /* margin: 0 2px 2px 0; */
-    /* overflow: hidden; */
 }
 .photo-gallery .anim-text:hover img {
     transition: transform .5s;
@@ -375,32 +320,12 @@ html {
 
 /* ////////////////// texte photo \\\\\\\\\\\\\\\\\ */
 
-/* @keyframes outrange-text-anim {
-    0% {
-        left: 2000px;
-        letter-spacing: 50px;
-    }
-    50% {
-        left: 0;
-        letter-spacing: 30px;
-        animation-timing-function: linear;
-    }
-    100% {
-        left: 0;
-        letter-spacing: normal;
-        animation-timing-function: ease-out;
-    }
-
-} */
 
 .photo-gallery .outrange-text {
     transition: 1s;
-    /* display: inline-block; */
     position: absolute;
-    /* height: 350px; */
     width: 2500px;
     background-color: rgba(0, 0, 0, 0.5);
-    /* text-align: center; */
     margin: .5em;
     padding: .5em;
     border-radius: 1em;
@@ -408,16 +333,12 @@ html {
     left: 1500px;
     top: 0;
     white-space: nowrap;
-    /* font-weight: bold; */
-    /* line-height: 2em; */
     font: bold 1em/2em ubuntu, serif;
     color: white;
     text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
-    /* z-index: 0; */
 }
 .photo-gallery div.anim-text:hover .outrange-text {
     transition: left .5s ease-out, letter-spacing .8s ease-out, width 1s ease-out;
-    /* animation: outrange-text-anim 1.5s; */
     width: 350px;
     left: 0;
     letter-spacing: 0px;
@@ -428,13 +349,6 @@ html {
     border-bottom: 2px solid #000;
     padding-bottom: .1em;
 }
-/* .photo-gallery .outrange-text .width-2 {
-    width: 800px;
-}
-.photo-gallery .outrange-text .width-3 {
-    width: 1200px;
-} */
-
 
 
 /* FOOTER */
@@ -445,10 +359,8 @@ footer {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #747474;
-}
-
-footer .send-message {
-    margin: 1em;
+    z-index: -1;
+    padding: 1em 2em;
 }
 
 footer .contact {
@@ -498,6 +410,70 @@ footer button:hover {
     background-color: #ddd;
     color: #201852;
 }
+
+footer .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    /* margin: 0 2em 0 2em; */
+    /* margin-bottom: 2em; */
+}
+
+
+footer .logos {
+    /* position: relative; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    /* color: white; */
+    /* fill: white; */
+}
+
+footer .logos img {
+    transition: 1s;
+    width: 2em;
+    /* padding-right: 2em; */
+}
+footer .logos i {
+    padding-left: 1em;
+}
+
+@keyframes docker_left_decay {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -2em;
+    }
+}
+
+footer .logos i:hover img {
+    /* left: -1em; */
+    transition: .5s;
+    width: 5em;
+    color: #aaa;
+    text-shadow: 1px 1px #fff;
+    cursor: crosshair;
+}
+
+footer .adress {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+footer .adress p{
+    display: inline-block;
+    color: white;
+    margin-left: 1em;
+}
+
+footer .adress img {
+    width: 2em;
+}
+
+
 
 
 

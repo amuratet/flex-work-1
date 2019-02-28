@@ -69,14 +69,17 @@ table {
     animation: display_credits 20s linear forwards;
     color: white;
     margin-left: 25%;
+    text-shadow: 1px 1px 1px #818181, -1px -1px 1px #818181, -1px 1px 1px #818181, 1px -1px 1px #818181;
 }
 table th {
-    padding-bottom: 2em;
+    padding-bottom: 3em;
+    letter-spacing: .1em;
 }
 table td {
     vertical-align: top;
     width: 10em;
     padding: .5em;
+    letter-spacing: .2em;
 }
 table .right  {
     text-align: right;
@@ -113,7 +116,6 @@ h1 {
     font-size: 2em;
     font-family: open-sans, serif;
     color: #ffffff;
-    text-shadow: 1px 1px 5px #818181, -1px -1px 5px #818181, -1px 1px 5px #818181, 1px -1px 5px #818181;
     z-index: 1;
     animation: animation-title 10s ease-out forwards;
 }

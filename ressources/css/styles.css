@@ -60,15 +60,51 @@ h2 {
         top: -100vh;
     }
 }
+
+@keyframes display_credits_2 {
+    0% {
+        top: 40vh;
+        transform: rotateX(20deg) translateZ(400px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2000px);
+    }
+}
+.star_wars {
+    perspective: 400px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
 table {
-    font: bold 1.5em/1.5em ubuntu, serif;
-    width: 50%;
-    position: absolute;
-    margin: 0 auto;
-    top: 100vh;
-    animation: display_credits 20s linear forwards;
-    color: white;
-    margin-left: 25%;
+    font: bold 5em/1.5em ubuntu, serif;
+    width: 100%;
+    position: relative;
+    /* z-index: 1000; */
+    /* top: 10000px; */
+    /* margin: 0 auto; */
+    /* top: 100vh; */
+    /* animation: display_credits 20s linear forwards; */
+    color: #feda4a;
+    /* transform-origin: 50% 100%; */
+    animation: display_credits_2 15s linear 3.5s forwards;
+    /* color: white; */
+    /* margin-left: 25%; */
     text-shadow: 1px 1px 1px #818181, -1px -1px 1px #818181, -1px 1px 1px #818181, 1px -1px 1px #818181;
 }
 table th {
@@ -135,10 +171,11 @@ h1 {
 }
 
 .earth-moon-container {
+    opacity: 0;
     padding: 50px;
     display: flex;
     justify-content: center;
-    animation:presentation-fade-in 10s ease-in forwards, animation-earth 20s linear forwards infinite;
+    animation:presentation-fade-in 10s ease-in 5s forwards, animation-earth 20s linear forwards infinite;
 }
 
 @keyframes presentation-fade-in {

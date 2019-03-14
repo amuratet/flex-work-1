@@ -503,9 +503,13 @@ footer .logos img {
     width: 2em;
 }
 footer .logos i {
+    transition: 1s;
     padding-left: 2em;
 }
-
+footer .logos i:hover {
+    transition: .5s;
+    padding-left: 1em;
+}
 footer .logos i:hover img {
     transition: .5s;
     width: 5em;
